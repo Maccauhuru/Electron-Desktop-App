@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SYSINFOAPP</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+</head>
+
+<body>
+    <script>
+        require('./renderer.js');
+    </script>
+    <h1>System Information</h1>
+    <div class="container">
+        <div id="output">
+        </div>
+    </div>
+    <script>
+        console.log(process);
+        let output = `
+    <h2 class ='page-header'>App Version Data</h2>
+    <ul class="list-group">
+    <li class="list-group-item">Node Version: ${process.versions.node}</li>
+    <li class="list-group-item">Chrome Version: ${process.versions.chrome}</li>
+    <li class="list-group-item">Electron Version: ${process.versions.electron}</li>   
+    </ul>
+    <br>
+<hr width="100%">
+<hr width="100%">
+<br>
+        <h2 class ='page-header'>System Specs</h2>
+    <ul class="list-group">
+    <li class="list-group-item">System Architecture: ${process.arch}</li>
+    <li class="list-group-item">Process Identifier: ${process.env.PROCESSOR_IDENTIFIER}</li>
+    <li class="list-group-item">Printer: ${process.env.PRINTER}</li>   
+    </ul>
+    <br>
+<hr width="100%">
+<hr width="100%">
+<h2 class ='page-header'>System Memory</h2>
+    <ul class="list-group">
+    <li class="list-group-item">System Memory Total: ${process.getSystemMemoryInfo().total}</li>
+    <li class="list-group-item">System Memory Free: ${process.getSystemMemoryInfo().free}</li>
+    <li class="list-group-item">System Memory Swap Total: ${process.getSystemMemoryInfo().swapTotal}</li>
+    <li class="list-group-item">System Memory Swap Free: ${process.getSystemMemoryInfo().swapFree}</li>   
+    </ul>
+
+<br>
+
+    `;
+        document.getElementById('output').innerHTML = output;
+    </script>
+</body>
+
+</html>

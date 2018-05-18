@@ -1,0 +1,16 @@
+{
+  "name": "electron-sysinfo",
+  "version": "1.0.0",
+  "description": "Electron App For SYSTEM Info\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bystem\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "S.L.Mupfukudzwa",
+  "license": "MIT"
+}
