@@ -20,6 +20,6 @@ List of tech used in this project:
 * [Dillinger](http://dillinger.io) - HTML to Markdown converter
 
 
-##Credits - Electron Official Documentation
+## Credits - Electron Official Documentation
 
 <https://electronjs.org/docs/tutorial/first-app>
