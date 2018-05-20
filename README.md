@@ -5,7 +5,7 @@
 A simple desktop app using electron.js that gets system information from operating system and displays it to user.The desktop app will display information such as processor type, memory usage/availability, printer details and much more.
 
 [Features](#features) | [Development](#development) | [Runtime](#runtime) |
-[Authors](#authors) | [License](#license) | [Release Notes](releasenotes.md)
+[Authors](#authors) | [License](#license) | [Release Notes](#reedme.md)
 
 
 ### Tech
@@ -21,4 +21,5 @@ List of tech used in this project:
 
 
 ##Credits - Electron Official Documentation
+
 <https://electronjs.org/docs/tutorial/first-app>
